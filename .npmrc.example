@@ -1,0 +1,4 @@
+# Copy this file to .npmrc (or set GITHUB_TOKEN in Vercel Environment Variables)
+# Never commit your real GitHub PAT token to Git!
+@kietvpt:registry=https://npm.pkg.github.com
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
