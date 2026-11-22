@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "installCommand": "printf '@kietvpt:registry=https://npm.pkg.github.com\\n//npm.pkg.github.com/:_authToken=%s\\n' \"$GITHUB_TOKEN\" > .npmrc && npm install",
+  "installCommand": "echo @kietvpt:registry=https://npm.pkg.github.com > .npmrc && echo //npm.pkg.github.com/:_authToken=$GITHUB_TOKEN >> .npmrc && npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
